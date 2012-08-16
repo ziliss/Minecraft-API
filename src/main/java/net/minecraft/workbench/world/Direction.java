@@ -120,7 +120,7 @@ public final class Direction {
             return facing;
         }
         else {
-            return (direction + facing) & Direction.MASK;
+            return ((direction + facing - 2) & Direction.MASK) + 2;
         }
     }
 
